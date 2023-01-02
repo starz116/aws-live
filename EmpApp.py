@@ -30,7 +30,6 @@ def home():
 def about():
     return render_template('AboutUs.html')
 
-
 @app.route("/addemp", methods=['POST'])
 def AddEmp():
     emp_id = request.form['emp_id']
