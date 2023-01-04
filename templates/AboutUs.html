@@ -1,55 +1,125 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>About Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
 </head>
-</head>
-<body style="background-color: aqua;">  
-        <!-- Member -->
-        <section>
-            <h1>Meet Our Member</h1></div>
-        </section>
-        
-        <section>
-            <article>
-            <h1 style="margin-top: 1rem;">WEI SIANG LIM</h1>
-            <h2>FOUNDER &#38 Chief Executive Officer (CEO) </h2>
-            <p>
-                Wei Siang founded and established the Epal Sbn. Bhd corporation around 2019 and play a role as leader to guide 
-                all the subdivide departments in the company to cooperate with each other in order to create a better product 
-                and brighter future for the company.
-            </p>
-            </article>
-        </section>
+<body>
 
-        <section>
-            <article>
-            <h1>WEN YI CHAN</h1>
-            <h2>EXECUTIVE DIRECTOR </h2>
-            <p>
-                Wen Yi as the director will lead the development department to design and implement the ideas or suggestions created 
-                under discussion among the members. Other than that, Wen Yi is also in charge of manipulating and managing the day-to-day 
-                operation of the company.
-            </p>
-            </article>
-        </section>
-        
-        <section>
-            <article>
-            <h1>SZE JUN LIM</h1>
-            <h2>STUDIO MANAGER </h2>
-            <p>
-                As the studio manager of this organization, Sze Jun is responsible for managing our daily scheduling of operation and invoicing 
-                from clients. Also, his job description includes employing the new staff and training them in order to provide a better service 
-                and develop more advanced devices to our client.
-            </p>
-            </article>
-        </section>
+<div class="about-section">
+  <h1>About Us Page</h1>
+</div>
 
-        <form action="/" autocomplete="on" method = "GET">
-            <button type="submit" style="background: grey; height: 45px; width: 200px; color:white; font:oblique;">Back To Home Page</button><br><br>
-        </form>
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="yongchen.jpg" alt="yongcheng" style="width:100%">
+      <div class="container">
+        <h2>PEH YONG CHENG</h2>
+        <p class="title">CEO & Founder</p>
+        <p>A founded and established the PGO SDN since 2018 and as leader to guide all the departments in the company to cooperate with each other in order to create a better product and brighter future for the company.</p>
+        <p>yongcheng@hotmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
 
-        <hr>
+  <div class="column">
+    <div class="card">
+      <img src="chiyin.jpg" alt="chiyin" style="width:100%">
+      <div class="container">
+        <h2>GAN CHI YIN</h2>
+        <p class="title">EXECUTIVE DIRECTOR</p>
+        <p>As the director will lead the development department to design and implement the ideas or suggestions created under discussion among the members.</p>
+        <p>athena@hotmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="chen.jpg" alt="chen" style="width:100%">
+      <div class="container">
+        <h2>OOI CHEN HAN</h2>
+        <p class="title">Manager of Software Engineering</p>
+        <p>As a manager of software engineering is to maintain our company website and will discuss some of the project with client.</p>
+        <p>chenhan@hotmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<a href="AddEmp.html"><p style="text-align:center">Home</a>
 </body>
+</html>
